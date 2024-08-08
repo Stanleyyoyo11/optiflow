@@ -1,0 +1,27 @@
+
+/* Réorganisation du footer pour les appareils mobiles */
+@media only screen and (max-width: 768px) {
+    .footer-columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-column {
+        width: 100%; /* Occuper toute la largeur sur les appareils mobiles */
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .social-icon {
+        margin: 0 5px;
+    }
+}
+
+

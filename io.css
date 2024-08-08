@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPTI FLOW - Votre partenaire de confiance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007bff;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #343a40;
+        }
+        p {
+            color: #6c757d;
+        }
+        .cta-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>OPTI FLOW</h1>
+    <p>Votre partenaire de confiance pour des solutions innovantes et personnalisées.</p>
+</header>
+
+<nav>
+    <a href="#services">Services</a>
+    <a href="#about">À propos</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <h2>Bienvenue chez OPTI FLOW</h2>
+    <p>
+        Nous sommes déterminés à vous offrir des services d'automatisation de qualité exceptionnelle pour répondre à tous vos besoins. Explorez notre site pour découvrir notre gamme de services et n'hésitez pas à nous contacter pour toute demande d'information ou de devis. Nous sommes impatients de vous accompagner dans la réalisation de vos projets !
+    </p>
+    <a href="#contact" class="cta-button">Contactez-nous</a>
+</div>
+
+<footer>
+    <p>&copy; 2024 OPTI FLOW. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>

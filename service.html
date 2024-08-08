@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mob.css">
+    <link rel="stylesheet" type="text/css" href="o.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Ajoutez ici le lien correct vers Bootstrap Icons -->
+    <style>
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff; /* Couleur du fond du bouton */
+            color: white; /* Couleur du texte */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Couleur de fond du bouton au survol */
+        }
+
+        /* Style pour le bouton Demander un Devis */
+        .btn-devis {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white; /* Couleur du texte */
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+            box-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-devis {
+            background-color: blueviolet;
+        }
+
+        /* Style au survol */
+        .btn-devis:hover {
+            background-color: #45a049; /* Couleur de fond au survol */
+        }
+
+        .option {
+            width: 120px;
+            padding: 80px;
+            margin: 0 60px;
+            background-color: white;
+            border-radius: 35px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+    <title>e-DIRECT SERVICE - Accueil</title>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="log21.png" alt="logo1">
+        </a>
+    </div>
+    <div class="menu-toggle">☰</div> <!-- Bouton de menu pour mobile -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="bi bi-house-check-fill"></i> Accueil</a></li>
+            <li><a href="Service.html"><i class="bi bi-newspaper"></i> Services</a></li>
+            <li><a href="about.html"><i class="bi bi-info-circle"></i> À propos</a></li>
+            <li><a href="contact1.html"><i class="bi bi-person-lines-fill"></i> Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="services">
+    <h2>Nos Services d'Automatisation</h2>
+    <div class="services-table">
+        <div class="service">
+            <img src="publication.jpg" alt="service 1">
+            <h3>Publications des postes réseaux sociaux</h3>
+            <p>Optimisez votre présence en ligne sans effort. Laissez notre service de publication automatique prendre en charge vos réseaux sociaux.</p>
+            <button onclick="window.location.href='formulaire.html'">Demander un Devis</button>
+        </div>
+        <div class="service">
+            <img src="com.jpg" alt="Service 2">
+            <h3>Communication Automatisée</h3>
+            <p>Automatisez vos communications internes et externes pour une collaboration plus efficace, des réponses rapides aux clients et une gestion simplifiée des équipes.</p>
+            <button onclick="window.location.href='formulaire.html'">Demander un Devis</button>
+        </div>
+        <div class="service">
+            <img src="images/presat.webp" alt="Service 3">
+            <h3>Analyse de Données en Temps Réel</h3>
+            <p>Obtenez des insights précieux à partir de données en temps réel pour prendre des décisions éclairées, anticiper les tendances et maximiser les opportunités.</p>
+            <button onclick="window.location.href='formulaire.html'">Demander un Devis</button>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="services-table">
+        <div class="service">
+            <img src="inte.jpg" alt="Service 4">
+            <h3>Intégration de Systèmes</h3>
+            <p>Connectez et harmonisez vos systèmes existants pour une circulation transparente des données et une automatisation cohérente des processus.</p>
+            <button onclick="window.location.href='formulaire.html'">Demander un Devis</button>
+        </div>
+        <div class="service">
+            <img src="chatbot.jpg" alt="Service 5">
+            <h3>Assistance Virtuelle</h3>
+            <p>Offrez un support client 24/7 grâce à une assistance virtuelle intelligente qui répond aux questions et résout les problèmes de manière proactive.</p>
+            <button onclick="window.location.href='formulaire.html'">Demander un Devis</button>
+        </div>
+        <div class="service">
+            <img src="Chat.jpg" alt="Service 6">
+            <h3>ChatBot</h3>
+            <p>Optimisez votre service clientèle et boostez votre productivité grâce à notre solution de Chatbot. Investissez dans l'avenir de votre entreprise dès aujourd'hui !</p>
+            <button onclick="window.location.href='formulaire.html'">Demander un Devis</button>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="services-table">
+        <div class="service">
+            <img src="ges.png" alt="Service 7">
+            <h3>Gestion de la Chaîne d'Approvisionnement</h3>
+            <p>Optimisez votre chaîne d'approvisionnement grâce à une automatisation intelligente qui réduit les délais, minimise les erreurs et maximise l'efficacité opérationnelle.</p>
+            <button onclick="window.location.href='formulaire.html'">Demander un Devis</button>
+        </div>
+        <div class="service">
+            <img src="re.jpg" alt="Service 8">
+            <h3>Reporting Automatisé</h3>
+            <p>Générez des rapports détaillés et personnalisés automatiquement pour suivre les performances, prendre des décisions stratégiques et communiquer efficacement avec les parties prenantes.</p>
+            <button onclick="window.location.href='formulaire.html'">Demander un Devis</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-columns">
+        <div class="footer-column">
+            <h3>OPTI FLOW</h3>
+            <p>Adresse:  Lomé, Togo</p>
+            <p>Téléphone: (+228) 93 69 45 37 </p>
+            <p>Email: optiflow32@gmail.com</p>
+        </div>
+        <div class="footer-column">
+            <h3>Nos Services</h3>
+            <ul>
+                <li>Assistant Virtuel</li>
+                <li>Analyse Prédictive pour la Gestion des Stocks</li>
+                <li>Système Personnalisée pour le Commerce Électronique</li>
+                <li>Plateforme d'Automatisation des Processus Métier (BPM)</li>
+                <li>Plateforme d'Analyse de Données en Temps Réel</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Liens Utiles</h3>
+            <ul>
+                <li><a href="#">Conditions d'utilisation</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Réseaux Sociaux</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><img src="icone/face.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="icone/x.png" alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="icone/li.png" alt="LinkedIn"></a>
+                <a href="#" class="social-icon"><img src="icone/ins.webp" alt="Instagram"></a>
+                <a href="#" class="social-icon"><img src="icone/wht.webp" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </div>
+</footer
+
+
+<!-- Ajoutez votre script JavaScript ici -->
+<!-- Ajoutez votre script JavaScript ici -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        // Assurez-vous que le menu n'affecte pas les services
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+    });
+</script>
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="o.css">
+    <link rel="stylesheet" type="text/css" href="mobile.css">
+    <link rel="stylesheet" type="text/css" href="for.css">
+    <link rel="stylesheet" type="text/css" href="ind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .contact-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-title h2 {
+            color: #333;
+        }
+    </style>
+    <title>e-DIRECT SERVICE - Accueil</title>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="log21.png" alt="logo1">
+        </a>
+    </div>
+    <div class="menu-toggle">☰</div> <!-- Bouton de menu pour mobile -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="bi bi-house-check-fill"></i> Accueil</a></li>
+            <li><a href="Service.html"><i class="bi bi-newspaper"></i> Services</a></li>
+            <li><a href="about.html"><i class="bi bi-info-circle"></i> À propos</a></li>
+            <li><a href="contact1.html"><i class="bi bi-person-lines-fill"></i> Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<center>
+    <h1>Demande de Devis - Automatisation des Tâches Répétitives</h1>
+</center>
+<div class="container">
+    <form action="process_form.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+        <label>
+            <input type="checkbox" id="entrepriseCheckbox" onclick="toggleFields('entreprise')"> Entreprise
+        </label>
+        <label>
+            <input type="checkbox" id="personnelCheckbox" onclick="toggleFields('personnel')"> Personnel
+        </label>
+
+        <div id="entrepriseField" style="display: none;">
+            <label for="entrepriseName">Nom de l'entreprise :</label>
+            <input type="text" id="entrepriseName" name="entrepriseName">
+        </div>
+
+        <div id="personnelField" style="display: none;">
+            <label for="personnelName">Nom & Prénoms :</label>
+            <input type="text" id="personnelName" name="personnelName">
+        </div>
+        
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="description">Description du projet :</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <label for="budget">Budget estimé (facultatif) :</label>
+        <input type="text" id="budget" name="budget">
+
+        <label for="attachments">Pièces jointes (le cas échéant) :</label>
+        <input type="file" id="attachments" name="attachments" accept=".pdf,.doc,.docx,.jpg,.png">
+
+        <input type="submit" value="Envoyer la demande">
+    </form>
+</div>
+
+<script>
+    function toggleFields(type) {
+        const entrepriseField = document.getElementById('entrepriseField');
+        const personnelField = document.getElementById('personnelField');
+        const entrepriseCheckbox = document.getElementById('entrepriseCheckbox');
+        const personnelCheckbox = document.getElementById('personnelCheckbox');
+
+        if (type === 'entreprise') {
+            if (entrepriseCheckbox.checked) {
+                personnelCheckbox.checked = false;
+                personnelField.style.display = 'none';
+                entrepriseField.style.display = 'block';
+            } else {
+                entrepriseField.style.display = 'none';
+            }
+        } else if (type === 'personnel') {
+            if (personnelCheckbox.checked) {
+                entrepriseCheckbox.checked = false;
+                entrepriseField.style.display = 'none';
+                personnelField.style.display = 'block';
+            } else {
+                personnelField.style.display = 'none';
+            }
+        }
+    }
+
+    function validateForm() {
+        const entrepriseCheckbox = document.getElementById('entrepriseCheckbox');
+        const personnelCheckbox = document.getElementById('personnelCheckbox');
+
+        if (!entrepriseCheckbox.checked && !personnelCheckbox.checked) {
+            alert("Veuillez sélectionner au moins une option entre entreprise et personnel.");
+            return false;
+        }
+        return true;
+    }
+</script>
+
+<footer>
+    <div class="footer-columns">
+        <div class="footer-column">
+            <h3>OPTI FLOW</h3>
+            <p>Adresse: Bè Kpota, Lomé, Togo</p>
+            <p>Téléphone: (+228) 92 33 37 27 / 71 39 00 67</p>
+            <p>Email: optiflow32@gmail.com</p>
+        </div>
+        <div class="footer-column">
+            <h3>Nos Services</h3>
+            <ul>
+                <li>Automatisation des (BPM)</li>
+                <li>Communication Automatisée</li>
+                <li>Analyse de Données en Temps Réel</li>
+                <li>Intégration de Systèmes</li>
+                <li>Assistance Virtuelle</li>
+                <li>Automatisation des Tests</li>
+                <li>Gestion de la Chaîne d'Approvisionnement</li>
+                <li>Reporting Automatisé</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Liens Utiles</h3>
+            <ul>
+                <li><a href="#">Conditions d'utilisation</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Réseaux Sociaux</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><img src="icone/face.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="icone/x.png" alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="icone/li.png" alt="LinkedIn"></a>
+                <a href="#" class="social-icon"><img src="icone/ins.webp" alt="Instagram"></a>
+                <a href="#" class="social-icon"><img src="icone/wht.webp" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Ajoutez votre script JavaScript ici -->
+<!-- Ajoutez votre script JavaScript ici -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        // Assurez-vous que le menu n'affecte pas les services
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>

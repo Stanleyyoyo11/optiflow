@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mob.css">
+    <link rel="stylesheet" href="o.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>e-DIRECT SERVICE - À propos</title>
+    <style>
+        /* Ajout de style pour la section "À propos" */
+        #about {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #about img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        #about h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #0056b3;
+        }
+
+        #about p {
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            #about h1 {
+                font-size: 2em;
+            }
+
+            #about p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="log21.png" alt="logo1">
+        </a>
+    </div>
+    <div class="menu-toggle">☰</div> <!-- Bouton de menu pour mobile -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="bi bi-house-check-fill"></i> Accueil</a></li>
+            <li><a href="Service.html"><i class="bi bi-newspaper"></i> Services</a></li>
+            <li><a href="about.html"><i class="bi bi-info-circle"></i> À propos</a></li>
+            <li><a href="contact1.html"><i class="bi bi-person-lines-fill"></i> Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="about">
+    <center>
+        <img src="images/apro.png" width="250">
+        <h1>OPTI FLOW</h1>
+        <p>est une entreprise spécialisée dans les solutions d'automatisation intelligente pour les entreprises. Nous proposons une gamme complète de services conçus pour aider nos clients à optimiser leurs processus métier, à améliorer leur efficacité opérationnelle et à accroître leur compétitivité sur le marché.
+
+        Grâce à notre expertise approfondie dans le domaine de l'automatisation et des technologies de pointe telles que l'intelligence artificielle, l'analyse de données et la robotique, nous sommes en mesure de fournir des solutions sur mesure qui répondent aux besoins spécifiques de chaque entreprise. Que vous soyez une petite entreprise ou une grande organisation, nous avons les compétences et l'expérience nécessaires pour vous accompagner dans votre transformation numérique.
+
+        Notre équipe est composée d'experts passionnés et dévoués qui s'engagent à offrir un service exceptionnel à nos clients. Nous croyons en la collaboration et en la communication transparente à chaque étape de nos projets, afin de garantir la satisfaction et la réussite de nos clients.
+
+        Chez e-DIRECT SERVICE, nous sommes résolument engagés à aider nos clients à atteindre leurs objectifs commerciaux et à prospérer dans un monde de plus en plus numérique. Contactez-nous dès aujourd'hui pour découvrir comment nous pouvons vous aider à transformer votre entreprise grâce à l'automatisation intelligente.
+        </p>
+    </center>
+</div>
+
+<footer>
+    <div class="footer-columns">
+        <div class="footer-column">
+            <h3>OPTI FLOW</h3>
+            <p>Adresse: Lomé, Togo</p>
+            <p>Téléphone: (+228) 93 69 45 37</p>
+            <p>Email: optiflow32@gmail.com</p>
+        </div>
+        <div class="footer-column">
+            <h3>Nos Services</h3>
+            <ul>
+                <li>Assistant Virtuel</li>
+                <li>Analyse Prédictive pour la Gestion des Stocks</li>
+                <li>Système Personnalisée pour le Commerce Électronique</li>
+                <li>Plateforme d'Automatisation des Processus Métier (BPM)</li>
+                <li>Plateforme d'Analyse de Données en Temps Réel</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Liens Utiles</h3>
+            <ul>
+                <li><a href="#">Conditions d'utilisation</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Réseaux Sociaux</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><img src="icone/face.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="icone/x.png" alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="icone/li.png" alt="LinkedIn"></a>
+                <a href="#" class="social-icon"><img src="icone/ins.webp" alt="Instagram"></a>
+                <a href="#" class="social-icon"><img src="icone/wht.webp" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script> <!-- Ajout du script JS -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>
